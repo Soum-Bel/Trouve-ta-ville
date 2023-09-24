@@ -1,0 +1,23 @@
+@use 'reset-css';
+
+* {
+    box-sizing: border;
+}
+
+body {
+    font-family: Lexend, sans-serif;
+    padding: 2rem;
+    background-color: #eee;
+}
+
+input,
+button,
+select,
+textarea {
+    font: inherit;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
