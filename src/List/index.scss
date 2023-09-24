@@ -1,0 +1,30 @@
+.list {
+
+    &-top {
+        display: flex;
+        align-items: center;
+        background-color: #222;
+        color: white;
+        justify-content: space-between;
+        border-radius: 5px;
+        margin-bottom: .5rem;
+    }
+
+    &-title {
+        padding-left: 1rem;
+    }
+
+    &-action {
+        padding: 1rem;
+        background-color: #000;
+        color: white;
+        border: 0;
+        cursor: pointer;
+        border-radius: 5px;
+
+        &:hover,
+        &:focus {
+            background-color: #333;
+        }
+    }
+}
