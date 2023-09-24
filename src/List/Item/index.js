@@ -1,5 +1,4 @@
 import './index.scss'
-import { formatPopulation } from './formatPopulation'
 
 export const Item = ({ nom, codesPostaux, codeRegion, population, populationIsFormatted }) => {
 
