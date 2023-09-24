@@ -25,7 +25,7 @@ export const FindCity = () => {
 
     // J'utilise useEffect pour n'appeler la fonction getCitiesList qu'une seule fois (apres le premier rendu du composant)
     useEffect(() => {
-        getCitiesList('paris')
+        getCitiesList('')
     }, [])
 
     // Je renvoi du JSX qui contient 3 elements
