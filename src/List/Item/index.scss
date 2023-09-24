@@ -1,0 +1,37 @@
+.item {
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+
+    @media screen and (min-width: 43rem) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    &-part {
+        display: block;
+        margin: 0.5rem 0;
+
+        @media screen and (min-width: 43rem) {
+            margin: 0;
+
+            &:nth-child(2) {
+                text-align: center;
+            }
+
+            &:nth-child(3) {
+                text-align: right;
+            }
+        }
+    }
+
+    strong {
+        font-weight: bold;
+    }
+
+    &-label {
+        opacity: .5;
+    }
+}
