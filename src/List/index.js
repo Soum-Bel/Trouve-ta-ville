@@ -3,16 +3,16 @@ import { Item } from "./Item"
 import './index.scss'
 
 export const List = ({ citiesList }) => {
-    // Je creer un nouveau state qui va contenir l'affichage actuel de la population
+    // Je crée un nouveau state qui va contenir l'affichage actuel de la population
     const [populationIsFormatted, setPopulationIsFormatted] = useState(false)
 
-    // Je creer une fonction qui va etre appelle a chaque clique de mon bouton
+    // Je crée une fonction qui va être appellée a chaque click de mon bouton
     const handleClick = () => {
-        // Je vais inverser la valeur de mon state (pour modifier l'affichage)
+        // J'inverse la valeur de mon state (pour modifier l'affichage)
         setPopulationIsFormatted(!populationIsFormatted)
     }
 
-    // Je boucle sur mon tableau de commune pour creer un nouveau composant Item
+    // Je boucle sur mon tableau de commune pour créer un nouveau composant Item
     // pour chacune de mes communes
     return (
         <section className="list">

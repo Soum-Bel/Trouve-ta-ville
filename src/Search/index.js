@@ -2,27 +2,26 @@ import { useState } from "react"
 import './index.scss'
 
 export const Search = ({ getCitiesList }) => {
-    // Je creer un nouvel etat pour surveiller la valeur du champ input de mon formulaire
-    // Je l'initialise par une chaine de caractere vide
+    // Je crée un nouvel état pour surveiller la valeur du champ input de mon formulaire
+    // Je l'initialise par une chaine de caractère vide
     const [searchInput, setSearchInput] = useState('')
 
-    // Je creer une fonction qui sera appele des qu'un changement se produit sur le formulaire
+    // Je crée une fonction qui sera appellée dès qu'un changement se produit sur le formulaire
     const handleChange = (event) => {
         // Je fais en sorte que mon Etat soit toujours en accord avec la valeur du champ input
         setSearchInput(event.target.value)
     }
 
-    // Je creer une fonction qui sera appele des que le formulaire est envoyé
+    // Je crée une fonction qui sera appellée dès que le formulaire  sera envoyé
     const handleSubmit = (event) => {
-        // J'empeche le comportement d'un formulaire par default (rafraichir la page)
+        // J'empêche le comportement d'un formulaire par défault (rafraichir la page)
         event.preventDefault()
-        // Je recupere la liste des commune en fonction de la recherche
+        // Je recupère la liste des communes en fonction de la recherche
         getCitiesList(searchInput)
     }
 
-    // J'affiche mon formulaire et j'ajoute des evenements sur
-    // mon champ input pour surveiller chaque changement
-    // mon envoi du formulaire pour faire une nouvelle requete API
+    // J'affiche mon formulaire et j'ajoute des évènements sur mon champ input pour surveiller chaque changement
+    // envoi du formulaire pour faire une nouvelle requete API
     return (
         <form className="search" onSubmit={handleSubmit}>
             <label className="search-label">
